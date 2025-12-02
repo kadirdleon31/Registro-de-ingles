@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            width: 360px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #ff6d2c;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #ff5c0a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Únete</h2>
+
+        <form>
+            <label>Nombre *</label>
+            <input type="text" placeholder="Ingresa tu nombre" required>
+
+            <label>Apellido *</label>
+            <input type="text" placeholder="Ingresa tu apellido" required>
+
+            <label>Correo electrónico *</label>
+            <input type="email" placeholder="ejemplo@correo.com" required>
+
+            <label>País *</label>
+            <select required>
+                <option value="">Selecciona un país</option>
+                <option>Panamá</option>
+                <option>Colombia</option>
+                <option>México</option>
+                <option>Perú</option>
+                <option>Argentina</option>
+            </select>
+
+            <label>Celular *</label>
+            <input type="tel" placeholder="0000-0000" required>
+
+            <button class="btn">¡Inicia ahora!</button>
+        </form>
+    </div>
+
+</body>
+</html>
